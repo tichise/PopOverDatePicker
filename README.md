@@ -11,7 +11,7 @@ PopOverDatePicker is a PopOver style DatePicker view.
 
 #### for Swift
 ```
-let calendar = Calendar.current
+        let calendar = Calendar.current
         let date = Date()
         guard let yesterday = calendar.date(byAdding: .day, value: -1, to: calendar.startOfDay(for: date)) else {
             fatalError()
