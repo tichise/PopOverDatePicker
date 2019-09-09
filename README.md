@@ -1,4 +1,4 @@
-### PopOverDatePicker
+### PopOverDatePicker ![CocoaPods Version](https://img.shields.io/cocoapods/v/PopOverDatePicker.svg?style=flat) ![Platform](https://img.shields.io/cocoapods/p/PopOverDatePicker.svg?style=flat) ![License](https://img.shields.io/cocoapods/l/PopOverDatePicker.svg?style=flat)
 
 PopOverDatePicker is a PopOver style DatePicker view.
 
