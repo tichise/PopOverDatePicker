@@ -29,6 +29,11 @@ open class PopOverDatePickerViewController: UIViewController, UIAdaptivePresenta
     override open func viewDidLoad() {
         super.viewDidLoad()
 
+        // The default UI of UIDatePicker is different on iOS14 and above, so I describe this.
+        if #available(iOS 13.4, *) {
+            self.datePicker.preferredDatePickerStyle = .wheels
+        }
+        
         self.datePicker.addTarget(self, action: #selector(changeDate), for: .valueChanged)
 
         self.preferredContentSize = CGSize(width: 320, height:162)
