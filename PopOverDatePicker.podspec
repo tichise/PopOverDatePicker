@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'PopOverDatePicker'
-  s.version = '1.2.0'
+  s.version = '1.4.0'
   s.license = 'MIT'
   s.summary = 'PopOverDatePicker is a PopOver style UIDatePicker.'
   s.homepage = 'https://github.com/tichise/PopOverDatePicker'
