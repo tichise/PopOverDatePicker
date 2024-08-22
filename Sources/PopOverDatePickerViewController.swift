@@ -73,9 +73,14 @@ open class PopOverDatePickerViewController: UIViewController, UIAdaptivePresenta
         self.datePicker.maximumDate = maximumDate
     }
 
-    static func getStoryboardsBundle() -> Bundle {
+    static func getStoryboardsBundle() -> Bundle? {
         let podBundle = Bundle(for: PopOverDatePickerViewController.self)
+        
+#if SWIFT_PACKAGE
+        let bundleURL = podBundle.url(forResource: "PopOverDatePicker_PopOverDatePicker", withExtension: "bundle")
+#else
         let bundleURL = podBundle.url(forResource: "PopOverDatePickerStoryboards", withExtension: "bundle")
+#endif
         let bundle = Bundle(url: bundleURL!)!
         
         return bundle
