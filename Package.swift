@@ -16,8 +16,10 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "PopOverDatePicker",
-      dependencies: []),
+        name: "PopOverDatePicker",
+        dependencies: [],
+        path: "Sources"
+    ),
     .testTarget(
       name: "PopOverDatePickerTests",
       dependencies: ["PopOverDatePicker"]),
